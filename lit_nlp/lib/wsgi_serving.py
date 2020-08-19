@@ -26,7 +26,7 @@ from werkzeug import serving as werkzeug_serving
 class BasicDevServer(object):
   """Basic development server; not recommended for deployment."""
 
-  def __init__(self, wsgi_app, port: int = 4321, host: Text = '127.0.0.1',
+  def __init__(self, wsgi_app, port: int = 4321, host: Text = None,
                **unused_kw):
     self._port = port
     self._host = host
